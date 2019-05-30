@@ -4,7 +4,10 @@
   "description": "Guided project for **Web API IV** module.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "ava --verbose",
+    "test:watch": "ava --verbose --watch"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,8 @@
     "sqlite3": "^4.0.8"
   },
   "devDependencies": {
-    "knex-cleaner": "^1.1.4"
+    "ava": "^1.4.1",
+    "knex-cleaner": "^1.1.4",
+    "nodemon": "^1.19.1"
   }
 }
